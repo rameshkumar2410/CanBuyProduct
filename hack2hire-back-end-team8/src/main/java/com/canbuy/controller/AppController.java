@@ -51,8 +51,9 @@ public class AppController {
 				throw new RestClientException("Invalid User details entered");
 			}
 
+		}else {
+			throw new RestClientException("Invalid User details entered");
 		}
-		return accountDetail;
 	}
 
 	@RequestMapping(value = "/getMultipleAccount/{custId}", method = RequestMethod.GET)
